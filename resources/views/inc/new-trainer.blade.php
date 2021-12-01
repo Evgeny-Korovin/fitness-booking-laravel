@@ -1,6 +1,8 @@
+@include('inc.messages')
 <div class="row">
     <h2 class="mt-4">Добавить тренера в клуб</h2>
-    <form action="components/post_trainer.php" method="POST" class="needs-validation mt-3" novalidate>
+    <form action="{{ route('post-trainer') }}" method="POST" class="needs-validation mt-3" novalidate>
+        @csrf
         <div class="row">
             <div class="form-group col-md-6 mb-3">
                 <input type="text" name="name" class="form-control" placeholder="Введите имя" required>

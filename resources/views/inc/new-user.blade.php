@@ -1,6 +1,7 @@
 <div class="row">
 <h2 class="mt-3">Добавить клиента в клуб</h2>
 <form action="components/post_user.php" method="POST" class="needs-validation mt-3" novalidate>
+    @csrf
     <div class="row">
         <div class="form-group col-md-6 mb-3">
             <input type="text" name="name" class="form-control" placeholder="Введите имя" required>

@@ -23,13 +23,13 @@
                     <a class="nav-link" href="#" style="color: white;">Доступные зантия</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white;">Список тренеров</a>
+                    <a class="nav-link" href="{{ route('all-trainers') }}" style="color: white;">Список тренеров</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white;">Список клиентов</a>
+                    <a class="nav-link" href="{{ route('all-users') }}" style="color: white;">Список клиентов</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white;">Типы занятий</a>
+                    <a class="nav-link" href="{{ route('type-classes') }}" style="color: white;">Типы занятий</a>
                 </li>
             </ul>
 
