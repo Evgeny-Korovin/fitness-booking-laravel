@@ -23,3 +23,18 @@ Route::post(
     '/trainers/submit',
     'TrainersController@submit'
 )->name('post-trainer');
+
+Route::post(
+    '/trainers/{id}/delete',
+    'TrainersController@deleteTrainer'
+)->name('delete-trainer');
+
+Route::get(
+    '/trainers/{id}',
+    'TrainersController@showOneTrainer'
+)->name('one-trainer');
+
+Route::post(
+    '/trainers/{id}/update',
+    'TrainersController@updateTrainer'
+)->name('update-trainer');

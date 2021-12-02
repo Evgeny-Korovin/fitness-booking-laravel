@@ -24,10 +24,15 @@
                         <td>{{ $elem->phone }}</td>
                         <td>{{ $elem->special }}</td>
                         <td>
-                            <form action='#' method='POST'>
-                                <button type='button' class="btn btn-info btn-sm userUpdateBtn" id="{{ $elem->id }}">Редактировать</button>
-                                <input type='hidden' name='id' value="{{ $elem->id }}">
+                            <form action="{{ route('delete-trainer', $elem->id) }}" method='POST'>
+                                @csrf
                                 <button type='submit' class="btn btn-danger btn-sm">Удалить</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form action="{{ route('one-trainer', $elem->id) }}">
+                                @csrf
+                                <button type='submit' class="btn btn-info btn-sm">Редактировать</button>
                             </form>
                         </td>
                     </tr>
